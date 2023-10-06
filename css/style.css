@@ -1,28 +1,3 @@
-/* 
-Created By : Muse-Master
-Created For : Themeforest
-
-===========================
-     Table Of Content
-===========================
-01 - CSS Reset
-02 - General Styles
-03 - Logo Holder Styles
-04 - Hero Section Styles
-05 - Hero Section -clickthrough- Styles
-06 - Clients Section Styles
-07 - Features Styles
-08 - Contact Details Styles
-09 - Services Styles
-10 - Offer Styles
-11 - Reviews Styles
-12 - FAQ Styles
-13 - Footer Hero Styles
-14 - Footer Styles
-15 - Responsive Styles
-*/
-
-
 /* -- CSS Reset -- */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -33,41 +8,24 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
+	scroll-behavior:smooth;
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
-	font: inherit;
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
 	line-height: 1;
 }
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-/* -- End Reset -- */
 
 /* -- General Styles -- */
 h1, h2, h3, h4{
@@ -114,7 +72,7 @@ h6{
 }
 
 p{
-	font-size: 15px;
+	font-size: 18px;
 	color: #777777;
 	line-height: 26px;
 }
@@ -168,11 +126,6 @@ header{
     color: #fff;
     min-height: 740px;
 }
-/* -- Header Section Styles ClickThrough -- */
-.click-through {
-	min-height: 600px;
-}
-
 
 /* -- Hero Section -leadgen- Styles -- */
 .hero{
@@ -225,78 +178,15 @@ header{
 	font-size: 22px;
 }
 
-/* -- Hero Section -clickthrough- Styles -- */
-.click-through .hero{
-	position:relative;
-	right:0;
-	left:0;
-	top:40%;
-	transform:translateY(-30%);
-}
-
-.click-through .hero-text{
-	margin-top: 0;
-	text-align: center;
-}
-
-.click-through .hero-text h1{
-	font-size: 66px;
-	font-weight: 300;
-	color: #fff;
-	line-height: 70px;
-}
-
-.click-through .hero-text h1 .big-title{
-	font-size: 86px;
-	color: #f9cd46;
-	font-weight: 900;
-}
-
-.click-through .hero-text h2{
-	color: #fff;
-	font-size: 66px;
-	font-weight: 300;
-	line-height: 60px;
-}
-
-.click-through .hero-text h6{
-	color: #fff;
-	margin-top: 10px;
-	letter-spacing: 0.6px;
-}
-
-.click-through .btn-primary {
-	font-size: 26px;
-	padding: 14px 40px;
-	border: none;
-	color: #202020;
-	margin-top: 20px;
-	background-image: -webkit-linear-gradient(top, #ffc600, #F2B900);
-  	background-image: -moz-linear-gradient(top, #ffc600, #F2B900);
-  	background-image: -ms-linear-gradient(top, #ffc600, #F2B900);
- 	background-image: -o-linear-gradient(top, #ffc600, #F2B900);
- 	background-image: linear-gradient(to bottom, #ffc600, #F2B900);
-}
-.click-through .btn-primary:hover, .click-through .btn-primary:active{
-	color: #202020;
-	background-image: -webkit-linear-gradient(top, #fff, #c4c4c4);
-  	background-image: -moz-linear-gradient(top, #fff, #c4c4c4);
-  	background-image: -ms-linear-gradient(top, #fff, #c4c4c4);
- 	background-image: -o-linear-gradient(top, #fff, #c4c4c4);
- 	background-image: linear-gradient(to bottom, #fff, #c4c4c4);
-}
-
-/* -- Hero Section -clickthrough- Styles End-- */
-
 .arrow {
 	text-align: center;
 	margin-top: 10%;
 }
 
 .hero-form{
-	background-color: rgb(249, 205, 70, 0.8);
+	background-color: #f9cd46;
 	text-align: center;
-	padding: 40px;
+	padding: 30px;
 	border-radius: 6px;
 	margin-top: 10px;
 }
@@ -325,11 +215,11 @@ header{
 .hero-form form input:hover, .hero-form form input:focus{
 	border: 1px solid #202020;
 }
-.form-control::-webkit-input-placeholder { 
-	color: #333333; 
-	opacity: 1; 
+.form-control::-webkit-input-placeholder {
+	color: #333333;
+	opacity: 1;
 }
-.form-control:-moz-placeholder { 
+.form-control:-moz-placeholder {
 	color: #333333;
 }
 .form-control::-moz-placeholder {
@@ -340,21 +230,10 @@ header{
 }
 
 .btn-primary{
-	font-size: 34px;
+	font-size: 30px;
 	font-weight: 900;
 	font-family: 'Raleway', sans-serif;
-	background-image: -webkit-linear-gradient(top, #202020, #000);
-  	background-image: -moz-linear-gradient(top, #202020, #000);
-  	background-image: -ms-linear-gradient(top, #202020, #000);
- 	background-image: -o-linear-gradient(top, #202020, #000);
- 	background-image: linear-gradient(to bottom, #202020, #000);
-}
-.btn-primary:hover, .btn-primary:active{
-	background-image: -webkit-linear-gradient(top, #000, #202020);
-  	background-image: -moz-linear-gradient(top, #000, #202020);
-  	background-image: -ms-linear-gradient(top, #000, #202020);
- 	background-image: -o-linear-gradient(top, #000, #202020);
- 	background-image: linear-gradient(to bottom, #000, #202020);
+	background: #009b56;
 }
 
 .hero-form > p{
@@ -491,14 +370,24 @@ padding-bottom: 8px;
 	margin-bottom: 80px;
 }
 
+.title {
+	margin-bottom: 2.5rem;
+}
+
 .services-title h2 {
 	padding: 8px 0;
+}
+
+.services-list {
+	display: flex;
+	align-items: stretch;
+	justify-content: space-around;
 }
 
 .services-list .list{
 	background-color: #f4f4f4;
 	padding: 70px 20px;
-	margin-top: 30px;
+	margin: 1rem;
 }
 
 .services-list .list:hover{
@@ -508,10 +397,10 @@ padding-bottom: 8px;
 .services-list .list:hover svg{
 	fill: #f4f4f4;
 }
-.services-list .list:hover h4, 
+.services-list .list:hover h4,
 .services-list .list:hover p {
 	color: #fff;
-} 
+}
 
 .services-list .list img{
 	margin-bottom: 8px;
@@ -544,14 +433,6 @@ padding-bottom: 8px;
   	background-image: -ms-linear-gradient(top, #ffc600, #F2B900);
  	background-image: -o-linear-gradient(top, #ffc600, #F2B900);
  	background-image: linear-gradient(to bottom, #ffc600, #F2B900);
-}
-.offer .btn-primary:hover, .offer .btn-primary:active{
-	color: #F2B900;
-	background-image: -webkit-linear-gradient(top, #000, #202020);
-  	background-image: -moz-linear-gradient(top, #000, #202020);
-  	background-image: -ms-linear-gradient(top, #000, #202020);
- 	background-image: -o-linear-gradient(top, #000, #202020);
- 	background-image: linear-gradient(to bottom, #000, #202020);
 }
 
 .offer a span{
@@ -680,14 +561,6 @@ padding-bottom: 8px;
   	background-image: -ms-linear-gradient(top, #ffc600, #F2B900);
  	background-image: -o-linear-gradient(top, #ffc600, #F2B900);
  	background-image: linear-gradient(to bottom, #ffc600, #F2B900);
-}
-.footer-hero .btn-primary:hover, .footer-hero .btn-primary:active{
-	color: #F2B900;
-	background-image: -webkit-linear-gradient(top, #000, #202020);
-  	background-image: -moz-linear-gradient(top, #000, #202020);
-  	background-image: -ms-linear-gradient(top, #000, #202020);
- 	background-image: -o-linear-gradient(top, #000, #202020);
- 	background-image: linear-gradient(to bottom, #000, #202020);
 }
 
 
@@ -894,7 +767,7 @@ padding-bottom: 8px;
 	}
 	.hero-text {
 		margin-top: 60px;
-	}	
+	}
 	.hero-text h6 {
 		font-size: 15px;
 		line-height: 20px;
