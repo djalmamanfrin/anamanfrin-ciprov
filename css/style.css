@@ -72,8 +72,8 @@ h6{
 }
 
 p{
-	font-size: 18px;
-	color: #777777;
+	font-size: 15px;
+	color: #414040;
 	line-height: 26px;
 }
 
@@ -84,6 +84,29 @@ p{
 	transition: all 0.3s ease-in-out;
 }
 
+svg {
+	width: 4rem;
+	height: 4rem;
+}
+
+.accordion {
+	margin-bottom: 3rem;
+}
+
+.card-header {
+	background-color: #fff;
+	border-top: 1px solid rgba(0,0,0,.125);
+	border-bottom: 0;
+}
+
+.card-header > a {
+	text-align: initial;
+}
+
+.card-body {
+	padding-left: 2rem;
+	text-align: justify;
+}
  /* Link Style */
 a:link {
     color: #fff;
@@ -175,7 +198,7 @@ header{
 .color-name {
 	color: #009b56;
 	font-weight: 900;
-	font-size: 22px;
+	font-size: 1.1rem;
 }
 
 .arrow {
@@ -229,11 +252,17 @@ header{
 	color: #333333;
 }
 
-.btn-primary{
-	font-size: 30px;
+.btn-primary {
+	font-size: 20px;
 	font-weight: 900;
 	font-family: 'Raleway', sans-serif;
 	background: #009b56;
+	border-color: #009b56;
+}
+
+.btn-primary:hover {
+	background-color: #009b56;
+	border-color: #009b56;
 }
 
 .hero-form > p{
@@ -289,14 +318,14 @@ padding-bottom: 8px;
 }
 
 .features .container{
-	background-image: url('../images/take-care-your-car.webp');
+	/*background-image: url('../images/take-care-your-car.webp');*/
 	background-repeat: no-repeat;
 	background-position: right bottom;
 	padding-bottom: 80px;
 }
 
 .features-title{
-	margin-bottom: 60px;
+	margin-bottom: 40px;
 }
 
 .features h4{
@@ -309,7 +338,6 @@ padding-bottom: 8px;
 
 .features-list svg{
 	float: left;
-	margin-top: 6px;
 	margin-right: 10px;
 }
 
@@ -353,7 +381,6 @@ padding-bottom: 8px;
 /* -- Services Styles -- */
 
 .services {
-	text-align: center;
 	margin-top: 100px;
 	margin-bottom: 90px;
 }
@@ -367,7 +394,7 @@ padding-bottom: 8px;
 }
 
 .services-title {
-	margin-bottom: 80px;
+	margin-bottom: 30px;
 }
 
 .title {
@@ -384,10 +411,10 @@ padding-bottom: 8px;
 	justify-content: space-around;
 }
 
-.services-list .list{
+.services-list .list {
+	text-align: center;
 	background-color: #f4f4f4;
 	padding: 70px 20px;
-	margin: 1rem;
 }
 
 .services-list .list:hover{
@@ -477,55 +504,10 @@ padding-bottom: 8px;
 	color: #494949;
 }
 
-.fa-star {
-	color: #ffc600;
-	font-size: 20px;
+.faq-list {
+	background-color: #f4f4f4;
+	padding: 70px 20px;
 }
-
-
-/* -- FAQ Styles -- */
-
-.faq {
-	margin-top: 80px;
-	margin-bottom: 80px;
-}
-
-.faq-title {
-	text-align: center;
-	margin-bottom: 20px;
-}
-.faq-title h2 {
-	padding: 8px 0;
-}
-
-.faq-list div h2{
-	font-size: 70px;
-	color: #f0f0f0;
-	line-height: 56px;
-	padding: 0;
-}
-
-.faq-list > div {
-	margin-top: 60px;
-}
-
-.faq-list .col-md-6, .faq-list .col-lg-6, .faq-list .col-sm-6 {
-	padding-left: 0px;
-}
-
-.faq-list .qa div{
-	padding-left: 28px;
-}
-
-.faq-list .qa h6 {
-	font-family: 'Raleway', sans-serif;
-	font-weight: 700;
-}
-
-.faq-list .qa p {
-	padding-top: 6px;
-}
-
 
 /* -- Footer Hero Styles -- */
 
@@ -693,6 +675,14 @@ padding-bottom: 8px;
 }
 
 @media only screen and (max-width: 500px) {
+
+	.features-list svg {
+		margin-top: 6px;
+	}
+
+	.services-list {
+		display: block;
+	}
 	header{
     	min-height: 1100px;
 	}
@@ -751,6 +741,9 @@ padding-bottom: 8px;
 }
 
 @media only screen and (max-width: 400px) {
+	.services-list {
+		display: block;
+	}
 	.logo-holder h4 {
 	}
 	.hero-text h1{
