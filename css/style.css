@@ -99,15 +99,20 @@ svg {
 	border-bottom: 0;
 }
 
-.card-header > a {
+.card-header > button {
 	text-align: initial;
+	background-color: #fff;
+}
+
+.btn.focus, .btn:focus {
+	box-shadow: 0 0 0 0;
 }
 
 .card-body {
-	padding-left: 2rem;
-	text-align: justify;
+padding-left: 2rem;
+text-align: justify;
 }
- /* Link Style */
+/* Link Style */
 a:link {
     color: #fff;
     text-decoration: none;
@@ -183,13 +188,13 @@ header{
 	line-height: 22px;
 }
 
-.hero-text h6{
+.hero-text p{
 	color: #fff;
 	margin-top: 40px;
 	letter-spacing: 0.6px;
 }
 
-.hero-text h6 .color-name {
+.hero-text p .color-name {
 	color: #009b56;
 	font-weight: 900;
 	font-size: 22px;
@@ -217,11 +222,14 @@ header{
 .hero-form h2{
 	font-size: 34px;
 	font-weight: 800;
+	color: #202020;
 }
 
-.hero-form h6{
+.hero-form p {
 	color: #202020;
 	font-weight: 300;
+	font-size: 18px;
+	line-height: 26px;
 }
 
 .hero-form form{
@@ -452,7 +460,7 @@ padding-bottom: 8px;
 	font-weight: 800;
 	border: none;
 	color: #202020;
-	line-height: 30px;
+	line-height: 20px;
 	padding-bottom: 24px;
 	font-family: 'Raleway', sans-serif;
 	background-image: -webkit-linear-gradient(top, #ffc600, #F2B900);
@@ -675,6 +683,11 @@ padding-bottom: 8px;
 }
 
 @media only screen and (max-width: 500px) {
+	.perfil {
+		width: 100%;
+		height: 30rem;
+		padding: 1rem;
+	}
 
 	.features-list svg {
 		margin-top: 6px;
@@ -761,7 +774,7 @@ padding-bottom: 8px;
 	.hero-text {
 		margin-top: 60px;
 	}
-	.hero-text h6 {
+	.hero-text p {
 		font-size: 15px;
 		line-height: 20px;
 	}
