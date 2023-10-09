@@ -33,7 +33,7 @@ h1, h2, h3, h4{
 }
 
 h3, h4, h5{
-	color: #494949;
+	color: #333333;
 }
 
 h5, h6, p, form {
@@ -49,7 +49,7 @@ h2{
 
 h3{
 	font-size: 26px;
-	color: #494949;
+	color: #333333;
 }
 
 h4{
@@ -475,7 +475,7 @@ padding-bottom: 8px;
 	font-size: 32px;
 	font-weight: 800;
 	border: none;
-	color: #202020;
+	color: #333333;
 	line-height: 20px;
 	padding-bottom: 24px;
 	font-family: 'Raleway', sans-serif;
@@ -525,7 +525,7 @@ padding-bottom: 8px;
 
 .reviews-list p{
 	margin-top: 10px;
-	color: #494949;
+	color: #333333;
 }
 
 .faq-list {
@@ -534,17 +534,6 @@ padding-bottom: 8px;
 }
 
 /* -- Footer Hero Styles -- */
-
-.footer-hero {
-	background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.6)),
-                url('../images/footer.jpg') no-repeat center;
-    background-size: cover;
-    background-attachment: scroll;
-    text-align: center;
-    color: #fff;
-    padding-top: 80px;
-    padding-bottom: 90px;
-}
 
 .footer-hero h2{
 	font-size: 40px;
@@ -556,7 +545,7 @@ padding-bottom: 8px;
 	font-size: 40px;
 	font-weight: 900;
 	border: none;
-	color: #202020;
+	color: #333333;
 	line-height: 18px;
 	padding-top: 34px;
 	padding-bottom: 34px;
