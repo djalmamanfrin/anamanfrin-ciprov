@@ -67,7 +67,7 @@ h5{
 }
 
 h6{
-	font-size: 18px;
+	font-size: 1.3rem;
 	line-height: 26px;
 }
 
@@ -108,7 +108,7 @@ svg {
 .card-header > button {
 	text-align: initial;
 	background-color: #fff;
-	font-size: 1.2rem;
+	font-size: 1.3rem;
 }
 
 .btn.focus, .btn:focus {
@@ -116,8 +116,8 @@ svg {
 }
 
 .card-body {
-padding-left: 2rem;
-text-align: justify;
+	text-align: justify;
+	font-size: 1.3rem;
 }
 /* Link Style */
 a:link {
@@ -435,6 +435,9 @@ padding-bottom: 8px;
 	text-align: center;
 	background-color: #f4f4f4;
 	padding: 70px 20px;
+}
+
+.border-bottom-solid-1-green {
 	border-bottom: 1px solid #009b56;
 }
 
@@ -577,6 +580,11 @@ padding-bottom: 8px;
 
 .footer p {
 	color: #ffffff;
+	font-size: 1rem;
+}
+
+.border-bottom-lg-0 {
+	border-bottom: 0;
 }
 
 .social {
@@ -698,6 +706,10 @@ padding-bottom: 8px;
 
 @media only screen and (max-width: 500px) {
 
+	.border-bottom-sm-solid-1-green {
+		border-bottom: 1px solid #009b56;
+	}
+
 	.mx-sm-3 {
 		margin-left: 1rem!important;
 		margin-right: 1rem!important;
@@ -712,7 +724,7 @@ padding-bottom: 8px;
 	.whatsapp-action {
 		height: 3.5rem;
 		width: 3.5rem;
-		bottom: 8rem;
+		bottom: 6rem;
 		right: 1rem;
 		padding: 0.4rem;
 	}
