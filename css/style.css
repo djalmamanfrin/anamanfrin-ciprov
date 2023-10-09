@@ -345,7 +345,7 @@ padding-bottom: 8px;
 
 .whatsapp-action {
 	position:fixed;
-	width:5rem;
+	width: 5rem;
 	height: 5rem;
 	bottom: 3rem;
 	right: 3rem;
@@ -689,8 +689,11 @@ padding-bottom: 8px;
 
 @media only screen and (max-width: 500px) {
 	.whatsapp-action {
+		height: 4rem;
+		width: 4rem;
 		bottom: 8rem;
 		right: 1rem;
+		padding: 0.5rem;
 	}
 	.perfil {
 		margin-left: 1.5rem;
