@@ -72,7 +72,7 @@ h6{
 }
 
 p{
-	font-size: 15px;
+	font-size: 1.3rem;
 	color: #414040;
 	line-height: 26px;
 }
@@ -97,11 +97,18 @@ svg {
 	background-color: #fff;
 	border-top: 1px solid rgba(0,0,0,.125);
 	border-bottom: 0;
+	padding: 0.5rem 0;
+}
+
+.mx-sm-3 {
+	margin-left: 0!important;
+	margin-right: 0!important;
 }
 
 .card-header > button {
 	text-align: initial;
 	background-color: #fff;
+	font-size: 1.2rem;
 }
 
 .btn.focus, .btn:focus {
@@ -207,7 +214,8 @@ header{
 .color-name {
 	color: #009b56;
 	font-weight: 900;
-	font-size: 1.1rem;
+	font-size: 1.4rem;
+	/*text-decoration: underline #009b56 0.1rem;*/
 }
 
 .arrow {
@@ -307,7 +315,7 @@ padding-bottom: 8px;
 /* -- Features Styles -- */
 
 .features{
-	margin-top: 80px;
+	margin-top: 3rem;
 }
 
 .features .container{
@@ -317,8 +325,8 @@ padding-bottom: 8px;
 	padding-bottom: 80px;
 }
 
-.features-title{
-	margin-bottom: 40px;
+.features-title {
+	margin-bottom: 2.5rem;
 }
 
 .features h4{
@@ -427,6 +435,7 @@ padding-bottom: 8px;
 	text-align: center;
 	background-color: #f4f4f4;
 	padding: 70px 20px;
+	border-bottom: 1px solid #009b56;
 }
 
 .services-list .list:hover{
@@ -688,15 +697,24 @@ padding-bottom: 8px;
 }
 
 @media only screen and (max-width: 500px) {
+
+	.mx-sm-3 {
+		margin-left: 1rem!important;
+		margin-right: 1rem!important;
+	}
+	.text-align-center {
+		text-align: center;
+		padding: 0 2rem;
+	}
 	.arrow {
 		margin-top: 2rem;
 	}
 	.whatsapp-action {
-		height: 4rem;
-		width: 4rem;
+		height: 3.5rem;
+		width: 3.5rem;
 		bottom: 8rem;
 		right: 1rem;
-		padding: 0.5rem;
+		padding: 0.4rem;
 	}
 	.perfil {
 		margin-left: 1.5rem;
