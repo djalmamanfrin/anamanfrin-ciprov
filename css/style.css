@@ -67,12 +67,12 @@ h5{
 }
 
 h6{
-	font-size: 1.3rem;
+	font-size: 1.2rem;
 	line-height: 26px;
 }
 
 p{
-	font-size: 1.3rem;
+	font-size: 1.2rem;
 	color: #212529;
 	line-height: 26px;
 }
@@ -108,7 +108,7 @@ svg {
 .card-header > button {
 	text-align: initial;
 	background-color: #fff;
-	font-size: 1.3rem;
+	font-size: 1.2rem;
 }
 
 .btn.focus, .btn:focus {
@@ -117,7 +117,7 @@ svg {
 
 .card-body {
 	text-align: justify;
-	font-size: 1.3rem;
+	font-size: 1.2rem;
 }
 /* Link Style */
 a:link {
