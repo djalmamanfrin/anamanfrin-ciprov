@@ -8,7 +8,16 @@
          $(window).on('resize', function() {
             $('header').css({ 'height': $(window).height() });
          });
+    });
 
+    jQuery(window).scroll(function() {
+      let scroll = jQuery(window).scrollTop();
+      let whatsappIcon = $('.whatsapp-action');
+      if (scroll >= 700) { // Altura da pagina em pixels
+        whatsappIcon.fadeIn( "slow");
+      } else {
+        whatsappIcon.fadeOut( "slow");
+      }
     });
 
 

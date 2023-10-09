@@ -164,6 +164,10 @@ header{
 	transform:translateY(-30%);
 }
 
+.display-none {
+	display: none;
+}
+
 .hero-text{
 	margin-top: 120px;
 }
@@ -214,15 +218,18 @@ header{
 .hero-form{
 	background-color: #f9cd46;
 	text-align: center;
-	padding: 30px;
+	padding: 2rem;
 	border-radius: 6px;
-	margin-top: 10px;
 }
 
-.hero-form h2{
+.hero-form h2 {
 	font-size: 34px;
 	font-weight: 800;
 	color: #202020;
+}
+
+.badge {
+	font-size: 25px;
 }
 
 .hero-form p {
@@ -230,65 +237,43 @@ header{
 	font-weight: 300;
 	font-size: 18px;
 	line-height: 26px;
+	padding: 1rem 0;
+	margin: 1rem 0;
 }
 
-.hero-form form{
-	margin-top: 30px;
-	font-weight: 300;
-}
-
-.hero-form .form-control{
-	border: 1px solid #fff;
-	border-radius: 0;
-	color: #202020;
-}
-
-.hero-form form input:hover, .hero-form form input:focus{
-	border: 1px solid #202020;
-}
-.form-control::-webkit-input-placeholder {
-	color: #333333;
-	opacity: 1;
-}
-.form-control:-moz-placeholder {
-	color: #333333;
-}
-.form-control::-moz-placeholder {
-	color: #333333;
-}
-.form-control:-ms-input-placeholder {
-	color: #333333;
+.checked-icon {
+margin-right: 1rem;
 }
 
 .btn-primary {
-	font-size: 20px;
-	font-weight: 900;
-	font-family: 'Raleway', sans-serif;
-	background: #009b56;
-	border-color: #009b56;
+font-size: 20px;
+font-weight: 900;
+font-family: 'Raleway', sans-serif;
+background: #009b56;
+border-color: #009b56;
 }
 
 .btn-primary:hover {
-	background-color: #009b56;
-	border-color: #009b56;
+background-color: #009b56;
+border-color: #009b56;
 }
 
 .hero-form > p{
-	color: #202020;
-	font-weight: 300;
-	padding-top: 10px;
+color: #202020;
+font-weight: 300;
+padding-top: 10px;
 }
 
 .form-message{
-	color: white;
-	display: none;
+color: white;
+display: none;
 }
 .form-msg{
-	color: #202020;
+color: #202020;
 }
 
 .form-msg-error{
-	color: red;
+color: red;
 }
 
 /* -- Clients Section Styles -- */
@@ -352,11 +337,22 @@ padding-bottom: 8px;
 
 /* -- Contact Details Styles -- */
 
-.contact{
-	background-image: url(../images/pattern.png);
-	background-attachment: fixed;
+.contact {
+	background-color: #009b56;
 	padding: 20px 0;
 	text-align: center;
+}
+
+.whatsapp-action {
+	position:fixed;
+	width:5rem;
+	height: 5rem;
+	bottom: 3rem;
+	right: 3rem;
+	background-color:#25d366;
+	border-radius: 3rem;
+	z-index:1000;
+	padding: 1rem;
 }
 
 .contact h2, .contact h3, .contact h4{
@@ -399,6 +395,14 @@ padding-bottom: 8px;
 	transition: all .3s;
 	text-align: center;
 	max-width: 50px;
+}
+
+.list-group-icon svg {
+	fill: #009b56;
+	line-height: 1;
+	transition: all .3s;
+	text-align: center;
+	max-width: 2rem;
 }
 
 .services-title {
@@ -557,12 +561,13 @@ padding-bottom: 8px;
 /* -- Footer Styles -- */
 
 .footer {
-	padding-top: 30px;
-	padding-bottom: 30px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	background-color: #009b56;
 }
 
-.footer .fa-heart {
-	color: #009b56;
+.footer p {
+	color: #ffffff;
 }
 
 .social {
@@ -683,8 +688,13 @@ padding-bottom: 8px;
 }
 
 @media only screen and (max-width: 500px) {
+	.whatsapp-action {
+		bottom: 8rem;
+		right: 1rem;
+	}
 	.perfil {
-		width: 100%;
+		margin-left: 1.5rem;
+		width: 85%;
 		height: 30rem;
 		padding: 1rem;
 	}
