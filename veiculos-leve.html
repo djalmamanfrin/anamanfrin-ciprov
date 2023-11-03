@@ -23,6 +23,32 @@
 			<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
+
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=AW-11136309476"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'AW-11136309476');
+		</script>
+		<!-- Event snippet for Redirecionamento para whats conversion page
+		In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+		<script>
+			function gtag_report_conversion(url) {
+				var callback = function () {
+					if (typeof(url) != 'undefined') {
+						window.location = url;
+					}
+				};
+				gtag('event', 'conversion', {
+					'send_to': 'AW-11136309476/0E2NCLi67PIYEOSxmr4p',
+					'event_callback': callback
+				});
+				return false;
+			}
+		</script>
 	</head>
 	<body id="home">
 		<header>
@@ -67,8 +93,10 @@
 									menos de:
 								</p>
 								<span class="text-center badge badge-pill badge-warning p-3 px-4 mb-3">R$ 2,99 por dia</span>
-								<a type="submit" class="btn btn-primary btn-sm btn-block" href="https://wa.link/arpb8k" target="_blank">
-									Solicitar Cotação
+								<a type="submit" class="btn btn-primary btn-sm btn-block"
+								   onclick="gtag_report_conversion('https://wa.link/arpb8k')"
+								   href="https://wa.link/arpb8k" target="_blank">
+									Solicitar Simulação
 									<img class="whatsapp-icon" src="images/icons/whatsapp.svg" alt="WhatsApp" width="20" height="20">
 								</a>
 							</div>
@@ -408,7 +436,9 @@
 			</div>
 		</footer>
 
-		<a class="whatsapp-action display-none" href="https://wa.link/tfyx0u" target="_blank">
+		<a class="whatsapp-action display-none"
+		   onclick="gtag_report_conversion('https://wa.link/arpb8k')"
+		   href="https://wa.link/arpb8k"  target="_blank">
 			<img class="whatsapp-icon  align-items-center" src="images/icons/whatsapp.svg" alt="WhatsApp" width="32" height="32">
 		</a>
 
@@ -418,14 +448,5 @@
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/custom.js" ></script>
-		<!-- Google tag (gtag.js) -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=AW-11136309476"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
-
-			gtag('config', 'AW-11136309476');
-		</script>
 	</body>
 </html>
